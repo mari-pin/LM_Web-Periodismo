@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- enlace de CSS -->
+    <link rel="stylesheet" href="./style.css/inscripcion.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Inscripcion</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" whith="100%" height="25%">
+        <img class="logo" src="./img/logo1.png" alt="logo">
+        <div headertitle>
+            <h1> XXI CONGRESO DE PERIODISMO<br> DEL CEEDCV</h1>
+            <P class="pTitle"> Valencia, 11 al 14 de Marzo<br>Palacio de Congresos</P>
+        </div>
+    </header>
+    <!-- Nav -->
+    <nav>
+        <ul class="ulNav">
+
+            <a class="a1" href="./index.html">Inicio</a>
+            <a class="a2" href="./programacion.html">Programación</a>
+            <a class="a3" href="./inscripcion.html">Registro a las Jornadas</a>
+
+
+        </ul>
+    </nav>
+    <!-- main -->
+    <main>
+        <section id="section1">
+        <h2>Formulario de inscripción</h2>
+        <form class="form" action="" method="post">
+            <fieldset id="field1">
+                <legend>Introduce tus datos</legend>
+                <div class="textos">
+                    <label for="nombre">Nombre</lavel><abbr title="required" aria-label="required">*</abbr><br>
+
+                        <!--  [\w]{1,140} ceracteres-->
+                        <label for="nombre">Apellidos</lavel><abbr title="required" aria-label="required">*</abbr><br>
+                            <!--  [\w]{1,140} -->
+                            <label for="email">Email</label><abbr title="required" aria-label="required">*</abbr><br>
+                            <!-- [a-zA-Z0-9_\.\+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-\.]+ campo email-->
+                            <label for="telefono">Teléfono</label><abbr title="required"
+                                aria-label="required">*</abbr><br>
+                            <!--   \+?\(?\d{2,4}\)?[\d\s-]{3,}  telefono-->
+                            <label for="file">Añadir un archivo</label>
+
+                </div>
+                <div class="cajas">
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre"
+                        pattern="/^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$/])" maxlength="50 " minlength="2"
+                        title="solo se pueden introducir letras" required><br>
+                    <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos"
+                        pattern="/^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$/])" maxlength="128" minlength="2" required><br>
+                    <input type="email" name="email" id="email" placeholder="@Mail"
+                        pattern="[a-zA-Z0-9_\.\+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-\.]+ " required><br>
+                    <input type="tel" name="telefono" id="tel" placeholder="Telefono"
+                        pattern="\+?\(?\d{2,4}\)?[\d\s-]{3,}" required><br>
+                    <input type="file" name="archivo" id="archivo" placeholder="Archivos .jpeg, .png"><br>
+
+
+                </div>
+
+            </fieldset>
+     
+        </section>
+        <section id="section2">
+            
+            <fieldset id="field2">
+                <legend>**Perfil de usuario</legend>
+                <!--  brebe explicacion -->
+                <div class="userLabel">
+                    <label class="usuario" for="text"> **¿Porqué te gustaría incribirte?</label><br>
+                    <textarea class="caja-usuario" type="text" name="caja a rellenar"name="texto" id="intereses" cols="70" rows="10" placeholder="Introduzca los motivos para participar..." required></textarea><br> <br>
+<!--                     <input class="caja-usuario" type="text" name="caja a rellenar" id=""
+                        placeholder="breve explicación"><br> -->
+                </div>
+
+            </fieldset>
+                <!-- titulo de las preguntas  -->
+               
+
+                <!-- cuestionario -->
+                <fieldset id="field3">
+                    <!-- titulo de las preguntas  -->
+                    <legend>** Actividad Profesional</legend>
+                    <div class="cuestionario">
+
+                        <input class="checkbox" type="checkbox" name="universitario" value="" universitario">
+                        <label class="usuario" for="text">Estudiante Universitario </label><br>
+
+                        <input class="checkbox" type="checkbox" name="Estudiante" value="Estudiante">
+                        <label class="usuario" for="text">Estudiante Bachillerato </label><br>
+
+                        <input class="checkbox" type="checkbox" for="doctorado">
+                        <label class="usuario" for="text">Doctorado </label><br>
+
+                        <input class="checkbox" type="checkbox" for="informatico">
+                        <label class="usuario" for="text">Profesional Informático</label><br>
+
+                        <input class="checkbox" type="checkbox" for="profesor">
+                        <label class="usuario" for="text">Profesor</label><br>
+
+                        <input class="checkbox" type="checkbox" for="otros">
+                        <label class="usuario" for="text">Otros</label><br>
+
+                    </div>
+
+
+                </fieldset>
+                <fieldset id="field4">
+                    <!-- titulo de las preguntas  -->
+                    <legend > ** Selecciona los talleres a los que quieres asistir<br></legend>
+                    <div class="cuestionario">
+
+                        <input class="checkbox" type="checkbox" name="universitario" value="" universitario"">
+                        <label class="usuario" for="text">Conferencia inaugural</label><br>
+
+                        <input class="checkbox" type="checkbox" name="Estudiante" value="Estudiante">
+                        <label class="usuario" for="text">Mesa de debate:"Enfocar en el area del pariod¡dismo desenfocado</label><br>
+
+                        <input class="checkbox" type="checkbox" for="doctorado">
+                        <label class="usuario" for="text">De la más dura Realidada la ficción. Periodísmosocial y literatura</label><br>
+
+                        <input class="checkbox" type="checkbox" for="informatico">
+                        <label class="usuario" for="text">Los retos del fotoperiodísmo en el mundo actual</label><br>
+
+                        <input class="checkbox" type="checkbox" for="profesor">
+                        <label class="usuario" for="text">Historias de un corresponsal</label><br>
+
+                        <input class="checkbox" type="checkbox" for="otros">
+                        <label class="usuario" for="text">Informativos en TV,¿reinvención o extinción?</label><br>
+
+                        <input class="checkbox" type="checkbox" for="otros">
+                        <label class="usuario" for="text">CEl periodismo del territorio</label><br>
+
+                        <input class="checkbox" type="checkbox" for="otros">
+                        <label class="usuario" for="text">Yo me lo guiso, yo me lo como</label><br>
+
+                        <input class="checkbox" type="checkbox" for="otros">
+                        <label class="usuario" for="text">Rico, rico y bien contado</label><br>
+
+                    </div>
+
+
+                </fieldset>
+                <fieldset id="field5">
+                    <!-- titulo de las preguntas  -->
+                    <legend>**Selecciona los talleres a los que quieres asistir</legend>
+                    <div>
+
+                        <input type="radio">
+                        <label class="usuario" for="text">Asistiré los tres días</label><br>
+
+                        <input class="checkbox" type="radio" >
+                        <label class="usuario" for="text">Asistiré el 11 de Marzo</label><br>
+
+                        <input class="checkbox" type="radio" for="doctorado">
+                        <label class="usuario" for="text">Asistiré el 12 de Marzo</label><br>
+
+                        <input class="checkbox" type="radio" for="informatico">
+                        <label class="usuario" for="text">Asistiré el 13 de Marzo</label><br>
+
+
+                    </div>
+
+
+                </fieldset>
+                <input type="submit" name="boto" id="btn" value="Enviar Formulario">
+            
+        </section>
+    </form>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+        <p class="p-footer">Actividad realizada por: María Ibáñez Rosalén, para la signatura de lenguaje de marcas. <br>
+            Primer Trimestre 2022/2023
+        </p>
+    </footer>
+    
+    
+  

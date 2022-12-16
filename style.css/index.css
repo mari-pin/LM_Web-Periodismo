@@ -1,0 +1,351 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.5px;
+}
+/* 
+body {
+    margin-left: 100px;
+    margin-right: 100px;
+
+
+} */
+
+.header {
+    background-color: rgb(207, 232, 247);
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* align-content: center; */
+    justify-content: center;
+}
+
+.logo {
+    font-size: small;
+    width: 170px;
+    rotate: -15deg;
+    padding-left: 350px;
+    padding-top: 150px;
+    position: relative;
+    margin-left: 250px;
+    float: left;
+
+}
+
+.headertitle {
+    text-align: center;
+    justify-content: left;
+    position: absolute;
+   
+
+}
+
+h1 {
+    font-size: 55px;
+    color: rgb(170, 167, 167);
+    text-align: right;
+    padding-right: 720px;
+   /*  padding-top: 7px;
+    margin-left: 0px; */
+
+
+
+}
+
+.pTitle {
+    text-align: right;
+    padding-right: 720px;
+    font-size: small;
+    text-align: right;
+    font-weight: bold;
+
+
+
+}
+
+nav {
+    background-color: rgb(33, 33, 103);
+    justify-content: center;
+    padding: 1px;
+    max-width: 100%;
+    max-height: 100%;
+    border-bottom: 2px rgb(150, 150, 250) dotted;
+}
+
+.ulNav {
+    text-align: center;
+    align-items: center;
+
+}
+
+.a1 {
+    color: #e7cc34;
+    /* padding-right: px; */
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-shadow: 0.5px 0.5px 0.5px #e7cc34;
+    padding-right: 20px;
+
+
+}
+
+.a2,
+.a3 {
+    font-weight: bold;
+    text-decoration: none;
+    color: #e7cc34;
+    /*  padding-right: 5px; */
+    font-size: 18px;
+    text-shadow: 0.5px 0.5px 0.5px #e7cc34;
+    padding-left: 20px;
+}
+
+.art1 {
+    display: inline;
+    text-align: center;
+
+
+}
+
+.art1-content {
+   
+  /*   display: inline-block; */
+    column-count: 2;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.pArtticle1 {
+    max-width: 100%;
+   /*  max-height: 100%; */
+    margin-left: 480px;
+   
+    text-align: justify;
+    justify-content: center;
+    font-size: 20px;
+     padding-left: 200px;
+ 
+
+}
+
+.video {
+    margin-right: 450px;
+    margin-left: 0px;
+    padding-right: 200px;
+
+
+
+}
+
+.section2{
+    background-color: rgb(81, 138, 154);
+    column-count: 2;
+    padding: 45px 15px;
+   
+
+}
+
+/* alinear columna 2 con la 1 y subrayado de los h2 */
+.section2-column2>h2 {
+    border-bottom: #e7cc34 4px dotted;
+    width: 100%;
+    margin-top: 15px;
+    font-size: 25px;
+   /*  float: left; */
+ 
+    letter-spacing: 1px;
+
+}
+
+.section2-column1>h2 {
+    border-bottom: #e7cc34 4px dotted;
+    width: 85%;
+    margin-top: 0px;
+    font-size: 25px;
+  /*   float: left; */
+    letter-spacing:1px;
+
+}
+
+.section2-column1 {
+    width: 50%;
+    margin-left: 650px;
+    text-align: justify;
+    font-size:medium;
+    line-height: 1.5em;
+
+   /*  margin-top: 0px; */
+
+}
+
+.section2-column2 {
+    width: 40%;
+    font-size: medium;
+    line-height: 1.5em;
+}
+/* .section2-column1 p {
+ letter-spacing:2px; 
+} */
+
+.section2-a {
+    color: blue;
+    border-bottom: rgb(245, 245, 231) 1px dotted;
+
+}
+
+.section2-bold {
+    text-align: justify;
+    padding-left: 0px;
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+.a-inscripcion {
+    text-decoration-color: blue;
+    text-decoration: underline;
+    color: blue;
+    border-bottom: rgb(245, 245, 231) 1px dotted;
+    margin-left: 0px;
+    margin-right: 2px;
+}
+
+
+/* .art3-1 {
+    width:100%;
+    margin-top: 30px;
+     position: relative; 
+     /* outline: 2px solid red; */
+/*   border: 2px solid black;
+     display: inline-block; */
+
+/*  display: inline; 
+   /*  text-align: center;
+    align-items: center; */
+/* justify-content: center; 
+
+}  */
+
+.h2-art3 {
+    text-align: center;
+    font-weight: 500px;
+    margin-top: 2.5em;
+    font-size: 2em;
+
+
+
+}
+/* eventos primera fila con float */
+.eventos {
+    display: inline;
+    width: 75%;
+   
+    /*  border: 2px solid black; */
+   /*  display: inline-block; */
+
+}
+#pack1{
+    text-align: center;
+
+}
+
+.img1 {
+    float: left;
+    padding-left: 650px;
+   /*  display: inline; */
+    padding-right: 15px;
+
+
+
+
+}
+
+/* hacer revision de la alineacion del texto , de momento esto no me hace nada pero quiero crearlo como spseudoelemento*/
+.img1>p {
+    justify-content: center;
+    text-align: center;
+    align-items: baseline;
+    letter-spacing: 0.5px;
+
+}
+
+
+.img2 {
+    float: left;
+    padding-right: 15px;
+   
+}
+.img2>p{
+    text-justify: center;
+}
+
+.img3 {
+    float: left;
+   /*  margin-left: 0px;
+    padding-left: 0px; */
+
+}
+
+/* eventos segunda fila con flex */
+.eventos2 {
+    display: flex;
+    /* flex-direction: row; */
+   /*  justify-content: center;
+    margin-left: 0px;
+    padding: 0px; */
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+    /*  border: 2px solid black; */
+    margin-bottom: 50px;
+    /* padding-right: 0px; */
+
+}
+
+#pack2{
+text-align:center;
+}
+.img4 {
+    float: left;
+    padding-left: 650px;
+    display: inline;
+    padding-right: 15px;
+    
+}
+
+.img5 {
+    float: left;
+    padding-right: 15px;
+
+}
+
+.img6 {
+    float: left;
+   /*  margin-left: 0px;
+    padding-left: 0px; */
+}
+
+
+
+.footer {
+    background-color: black;
+    color: white;
+   padding-left: 350px;
+   padding-top: 20px;
+   padding-bottom:20px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    text-align: left;
+    
+   
+}
+
+footer>p {
+    padding-left: 20em;
+    letter-spacing: 3px;
+    color: white;
+   
+
+}

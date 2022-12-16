@@ -1,0 +1,364 @@
+/* fuente para el documanto */
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.5px;
+}
+
+/* margenes de todo el body */
+/* body {
+    margin-left: 100px;
+    margin-right: 100px;
+} */
+.header {
+    background-color: rgb(207, 232, 247);
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* align-content: center; */
+    justify-content: center;
+}
+
+.logo {
+    font-size: small;
+    width: 170px;
+    rotate: -15deg;
+    padding-left: 350px;
+    padding-top: 150px;
+    position: relative;
+    margin-left: 250px;
+    float: left;
+
+}
+
+.headertitle {
+    text-align: center;
+    justify-content: left;
+    position: absolute;
+
+
+}
+
+h1 {
+    font-size: 55px;
+    color: rgb(170, 167, 167);
+    text-align: right;
+    padding-right: 720px;
+    /*  padding-top: 7px;
+    margin-left: 0px; */
+
+
+
+}
+
+.pTitle {
+   font-weight: bold;
+    text-align: right;
+    padding-right: 720px;
+    font-size: small;
+    text-align: right;
+    font-weight: bold;
+    color: #181817;
+
+
+
+}
+
+/* nav */
+nav {
+    background-color: rgb(33, 33, 103);
+    justify-content: center;
+    padding: 1px;
+    max-width: 100%;
+    max-height: 100%;
+    border-bottom: 2px rgb(150, 150, 250) dotted;
+}
+
+.ulNav {
+    text-align: center;
+    align-items: center;
+
+}
+
+/* efectos Nav */
+a:hover {
+    background-color: blueviolet;
+    transform-style: flat;
+    size: 20px;
+    color: aquamarine;
+    text-transform: uppercase;
+    transition-duration: 2s;
+    transition-duration: 2s;
+    transition-duration: 0.5s;
+
+}
+
+/* Navbar a individuales */
+.a1 {
+    color: #e7cc34;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+.a2 {
+
+    text-decoration: underline 2px solid;
+    color: #e7cc34;
+    text-shadow: 0.5px 0.5px 0.5px #e7cc34;
+    font-size: 18px;
+}
+
+.a3 {
+    font-weight: bold;
+    text-decoration: none;
+    color: #e7cc34;
+    font-size: 18px;
+    text-shadow: 0.5px 0.5px 0.5px #e7cc34;
+    padding-left: 20px;
+}
+
+/* seccion tabla */
+.section1 {
+    font-size: x-large;
+    margin-top: 2em;
+    margin-bottom: 3em;
+
+}
+
+/* title tabla */
+.title {
+    text-align: center;
+    font-size: 60px;
+}
+
+/* tabla caja completa */
+table {
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    text-align: left;
+    vertical-align: middle;
+    display: inline-block;
+    border: white 20px solid;
+    margin-left: 22em;
+
+}
+
+/* th todas y elimina el rosa ultimo 13 marzo  */
+th {
+    background-color: #ffff;
+    font-size: 20px;
+    font-weight: 200px;
+    padding: 3px;
+    border: white 2px solid;
+
+
+}
+
+/* thead rojos de las columnas */
+thead>tr>th {
+    background-color: rgb(218, 54, 54);
+
+}
+
+/* coloreamos las columnas pares */
+tr:nth-child(even) {
+    background-color: rgb(234, 146, 146);
+    color: black;
+    padding: 30px;
+}
+
+/* titulo de la tabla */
+table>caption {
+    text-align: center;
+    background-color: black;
+    color: azure;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+
+
+}
+
+/* todos  */
+table>td {
+    text-align: center;
+    display: inline-block;
+    align-content: flex-end;
+    padding-left: 400px;
+    font-size: 13;
+    letter-spacing: 2px;
+
+
+}
+
+/* intento de colorear lel border bottom */
+.subrayada {
+    border-bottom: #181817 5px solid;
+}
+
+table>tfooter>td {
+    background-color: rgb(218, 54, 54);
+    padding-top: 3px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.a-inscripcion {
+    text-decoration-color: blue;
+    text-decoration: underline;
+    color: blue;
+    border-bottom: rgb(230, 10, 238) 2px dotted;
+    margin-left: 0px;
+    margin-right: 2px;
+
+}
+
+
+.section3 {
+    background-color: rgba(78, 115, 130, 0.865);
+
+    padding-left: 165px;
+
+}
+
+#h2 {
+    font-size: 50px;
+
+}
+
+.columns {
+    display: inline-block;
+    text-align: left;
+    position: relative;
+    text-decoration: none;
+    padding-left: 300px;
+
+
+}
+
+
+
+.col1 {
+    float: left;
+    list-style: none;
+    text-align: left;
+    font-size: 25px;
+    line-height: 40px;
+
+
+
+
+}
+
+.col1 li h4 {
+    width: 70%;
+    background-color: rgba(78, 115, 130, 0.865);
+}
+
+.col2 li h4 {
+    width: 90%;
+    background-color: rgba(78, 115, 130, 0.865);
+}
+
+.col3 li h4 {
+    width: 90%;
+    background-color: rgba(78, 115, 130, 0.865);
+}
+
+.col1 li {
+    font-weight: lighter;
+}
+
+.col2 {
+    float: left;
+    list-style: none;
+    list-style: none;
+    text-align: left;
+    font-size: 25px;
+    line-height: 40px;
+}
+
+.col2 li {
+    font-weight: lighter;
+}
+
+.col3 {
+    float: left;
+    list-style: none;
+    text-align: left;
+    font-size: 25px;
+    line-height: 40px;
+    padding-right: 900px;
+}
+
+.col3 li {
+    font-weight: lighter;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .section3 {
+    list-style: none;
+    background-color:hwb(198 35% 36%);  rgba(78, 115, 130, 0.865); 
+    padding: 10px;
+    text-align: center;
+}*/
+
+/* .section3 h2:first-child {
+    font: bolder;
+    font-size: 50px;
+    text-align: left;
+    margin-left: 40px;
+}
+
+
+/* caja de las columnas 
+.columns {
+    width: 60%;
+    text-align: left;
+    columns: 3;
+  
+}*/
+/* li de las columnas 
+li {
+    list-style: none;
+    align-content: center;
+    text-align: left;
+    font-weight: 200;
+
+}*/
+/* titulo de las columnas 
+h4 {
+    background-color: hwb(198 45% 38%);
+    width: 65%;
+    text-shadow: #181817 2px 2px 2px;
+
+} /*
+/* footer entero */
+footer {
+    background-color: black;
+    padding: 5px;
+    line-height: 30px;
+    margin-top: 0px;
+}
+
+p {
+    padding-left: 20em;
+    letter-spacing: 3px;
+    color: white;
+}
