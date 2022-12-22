@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Libre+Baskerville:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,500&family=Poppins:ital,wght@0,200;0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
     <!-- enlace de CSS -->
     <link rel="stylesheet" href="./style.css/inscripcion.css">
     <!-- font awesome -->
@@ -37,58 +43,78 @@
     </nav>
     <!-- main -->
     <main>
+
+        <!-- titulo del formulario -->
         <section id="section1">
-        <h2>Formulario de inscripción</h2>
-        <form class="form" action="" method="post">
-            <fieldset id="field1">
-                <legend>Introduce tus datos</legend>
-                <div class="textos">
-                    <label for="nombre">Nombre</lavel><abbr title="required" aria-label="required">*</abbr><br>
-
-                        <!--  [\w]{1,140} ceracteres-->
-                        <label for="nombre">Apellidos</lavel><abbr title="required" aria-label="required">*</abbr><br>
-                            <!--  [\w]{1,140} -->
-                            <label for="email">Email</label><abbr title="required" aria-label="required">*</abbr><br>
-                            <!-- [a-zA-Z0-9_\.\+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-\.]+ campo email-->
-                            <label for="telefono">Teléfono</label><abbr title="required"
-                                aria-label="required">*</abbr><br>
-                            <!--   \+?\(?\d{2,4}\)?[\d\s-]{3,}  telefono-->
-                            <label for="file">Añadir un archivo</label>
-
-                </div>
-                <div class="cajas">
-                    <input type="text" name="nombre" id="nombre" placeholder="Nombre"
-                        pattern="/^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$/])" maxlength="50 " minlength="2"
-                        title="solo se pueden introducir letras" required><br>
-                    <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos"
-                        pattern="/^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$/])" maxlength="128" minlength="2" required><br>
-                    <input type="email" name="email" id="email" placeholder="@Mail"
-                        pattern="[a-zA-Z0-9_\.\+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-\.]+ " required><br>
-                    <input type="tel" name="telefono" id="tel" placeholder="Telefono"
-                        pattern="\+?\(?\d{2,4}\)?[\d\s-]{3,}" required><br>
-                    <input type="file" name="archivo" id="archivo" placeholder="Archivos .jpeg, .png"><br>
-
-
-                </div>
-
-            </fieldset>
-     
+            <h2>Formulario de inscripción</h2>
         </section>
-        <section id="section2">
-            
-            <fieldset id="field2">
-                <legend>**Perfil de usuario</legend>
-                <!--  brebe explicacion -->
-                <div class="userLabel">
-                    <label class="usuario" for="text"> **¿Porqué te gustaría incribirte?</label><br>
-                    <textarea class="caja-usuario" type="text" name="caja a rellenar"name="texto" id="intereses" cols="70" rows="10" placeholder="Introduzca los motivos para participar..." required></textarea><br> <br>
-<!--                     <input class="caja-usuario" type="text" name="caja a rellenar" id=""
-                        placeholder="breve explicación"><br> -->
-                </div>
 
-            </fieldset>
-                <!-- titulo de las preguntas  -->
-               
+        <!-- formulario -->
+        <form class="form" action="submi" method="post">
+
+            <section id="section1_1">
+        <!-- caja del formulario     -->
+                <fieldset id="field1">
+                    <legend>Introduce tus datos</legend>
+                    <div class="textos">
+
+                        <!-- label del formulario -->
+                        <label for="nombre">Nombre</lavel><abbr title="required" aria-label="required">*</abbr><br>
+
+                            
+                            <label for="nombre">Apellidos</lavel><abbr title="required"
+                                    aria-label="required">*</abbr><br>
+                              
+                                <label for="email">Email</label><abbr title="required"
+                                    aria-label="required">*</abbr><br>
+                              
+                                <label for="telefono">Teléfono</label><abbr title="required"
+                                    aria-label="required">*</abbr><br>
+                              
+                                <label for="file">Añadir un archivo</label>
+
+                    </div>
+                    <div class="cajas">
+                        
+                        <!-- inputs del formulario -->
+                        <input type="text" name="nombre" id="nombre" value="nombre" placeholder="Nombre"
+                            pattern="/^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$/])" maxlength="50 " minlength="2"
+                            title="solo se pueden introducir letras" required><br>
+
+                        <input type="text" name="apellidos" id="apellidos" value="apellidos"
+                            pattern="/^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$/])" maxlength="128" minlength="2"
+                            required><br>
+
+                        <input type="email" name="email" id="email" value="email" placeholder="@Mail"
+                            pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+.[a-z]{2,4}$" required><br>
+
+                        <input type="tel" name="telefono" id="tel" value="tel" placeholder="Telefono"
+                            pattern="\+?\(?\d{2,4}\)?[\d\s-]{3,}" required><br>
+
+                        <input type="file" name="archivo" id="archivo" placeholder="Archivos .jpeg, .png"><br>
+
+
+                    </div>
+
+                </fieldset>
+
+            </section>
+
+            <!-- seccion 2 preguntas usuario -->
+
+            <section id="section2">
+
+                <fieldset id="field2">
+                    <legend>**Perfil de usuario</legend>
+                    <!--  brebe explicacion -->
+                    <div class="userLabel">
+                        <label class="usuario" for="text"> *¿Porqué te gustaría incribirte?</label><br>
+                        <textarea class="caja-usuario" type="text" name="caja a rellenar" name="texto" id="intereses"
+                            cols="70" rows="10" placeholder="Brebe descripción..." value="texto"
+                            required></textarea><br> <br>
+                    </div>
+
+                </fieldset>
 
                 <!-- cuestionario -->
                 <fieldset id="field3">
@@ -102,16 +128,16 @@
                         <input class="checkbox" type="checkbox" name="Estudiante" value="Estudiante">
                         <label class="usuario" for="text">Estudiante Bachillerato </label><br>
 
-                        <input class="checkbox" type="checkbox" for="doctorado">
+                        <input class="checkbox" type="checkbox" for="doctorado" value="doctorado">
                         <label class="usuario" for="text">Doctorado </label><br>
 
-                        <input class="checkbox" type="checkbox" for="informatico">
+                        <input class="checkbox" type="checkbox" for="informatico" value="informatico">
                         <label class="usuario" for="text">Profesional Informático</label><br>
 
-                        <input class="checkbox" type="checkbox" for="profesor">
+                        <input class="checkbox" type="checkbox" for="profesor" value="profesor">
                         <label class="usuario" for="text">Profesor</label><br>
 
-                        <input class="checkbox" type="checkbox" for="otros">
+                        <input class="checkbox" type="checkbox" for="otros" value="otros">
                         <label class="usuario" for="text">Otros</label><br>
 
                     </div>
@@ -120,17 +146,19 @@
                 </fieldset>
                 <fieldset id="field4">
                     <!-- titulo de las preguntas  -->
-                    <legend > ** Selecciona los talleres a los que quieres asistir<br></legend>
+                    <legend> ** Selecciona los talleres a los que quieres asistir<br></legend>
                     <div class="cuestionario">
 
                         <input class="checkbox" type="checkbox" name="universitario" value="" universitario"">
                         <label class="usuario" for="text">Conferencia inaugural</label><br>
 
                         <input class="checkbox" type="checkbox" name="Estudiante" value="Estudiante">
-                        <label class="usuario" for="text">Mesa de debate:"Enfocar en el area del pariod¡dismo desenfocado</label><br>
+                        <label class="usuario" for="text">Mesa de debate:"Enfocar en el area del pariod¡dismo
+                            desenfocado</label><br>
 
                         <input class="checkbox" type="checkbox" for="doctorado">
-                        <label class="usuario" for="text">De la más dura Realidada la ficción. Periodísmosocial y literatura</label><br>
+                        <label class="usuario" for="text">De la más dura Realidada la ficción. Periodísmosocial y
+                            literatura</label><br>
 
                         <input class="checkbox" type="checkbox" for="informatico">
                         <label class="usuario" for="text">Los retos del fotoperiodísmo en el mundo actual</label><br>
@@ -154,7 +182,7 @@
 
 
                 </fieldset>
-                <fieldset id="field5">
+                <fieldset id="field5" aria-valuetext="text" required>
                     <!-- titulo de las preguntas  -->
                     <legend>**Selecciona los talleres a los que quieres asistir</legend>
                     <div>
@@ -162,7 +190,7 @@
                         <input type="radio">
                         <label class="usuario" for="text">Asistiré los tres días</label><br>
 
-                        <input class="checkbox" type="radio" >
+                        <input class="checkbox" type="radio">
                         <label class="usuario" for="text">Asistiré el 11 de Marzo</label><br>
 
                         <input class="checkbox" type="radio" for="doctorado">
@@ -176,17 +204,15 @@
 
 
                 </fieldset>
-                <input type="submit" name="boto" id="btn" value="Enviar Formulario">
-            
-        </section>
-    </form>
+                <input type="submit" name="boton" id="btn" value="Enviar Formulario">
+
+            </section>
+        </form>
     </main>
+
     <!-- footer -->
     <footer class="footer">
         <p class="p-footer">Actividad realizada por: María Ibáñez Rosalén, para la signatura de lenguaje de marcas. <br>
             Primer Trimestre 2022/2023
         </p>
     </footer>
-    
-    
-  
