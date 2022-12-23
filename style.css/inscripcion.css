@@ -45,7 +45,7 @@ h3 {
 .headertitle {
     text-align: center;
     justify-content: left;
-    position: absolute;
+    
 
 
 }
@@ -209,9 +209,6 @@ label {
     font-size: 18px;
 }
 
-abbr {
-    color: red;
-}
 
 #nombre,
 #apellidos,
@@ -272,6 +269,7 @@ input:valid {
     width: 100%;
     height: 100%;
     margin-top: 20px;
+    border-radius:  10px 10px ;
 }
 
 #field3 {
