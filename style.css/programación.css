@@ -45,7 +45,7 @@ h3 {
 .headertitle {
     text-align: center;
     justify-content: left;
-    position: absolute;
+   
 
 
 }
@@ -211,17 +211,20 @@ table>td {
     border-bottom: #181817 5px solid;
 } */
 
-#tdborder {
+#tdborder1, #tdborder2,  #tdborder3,  #tdborder4,  #tdborder5,  #tdborder6,  #tdborder7,  #tdborder8{
     box-sizing: border-box;
-    border-color: 2px solid #CCEAF4;
+    border: 5px solid #CCEAF4;
 }
 
-table>tfooter>td {
+table tfooter td {
     font-size: 14px;
-    background-color: rgb(218, 54, 54);
     padding-top: 3px;
     padding-bottom: 5px;
     font-weight: bold;
+}
+#tfoot{
+    background-color: rgb(198, 53, 53);
+    text-align: center;
 }
 
 .a-inscripcion {
